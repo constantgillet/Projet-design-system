@@ -35,10 +35,6 @@
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/runtime": "^7.10.2",
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "bootstrap": "^4.5.0",
-    "bootstrap-select": "^1.13.18",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
