@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import React, {useEffect, useState} from 'react'
+import { Link, useHistory } from 'react-router-dom'
 import Button from '../../components/Button/Button'
 import FormText from '../../components/FormText/FormText'
 import Input from '../../components/Input/Input'
@@ -8,10 +8,23 @@ import './LoginPage.scss'
 
 export default function LoginPage() {
 
+    const history = useHistory()
+    const [isPosting, setIsPoting] = useState(false)
+
     //Component did mount
     useEffect(() => {
         document.title = 'Login'
     }, [])
+
+
+    const onLoginButtonClick = (e) => {
+        e.preventDefault()
+        setIsPoting(true)
+
+        setTimeout(() => {
+            history.push('/register')
+        }, 1000)
+    }
 
     return (
         <main className="login-page">
@@ -28,7 +41,7 @@ export default function LoginPage() {
                         <Label htmlFor="input-password">Password</Label>
                         <Input type="password" placeholder="Your password" id="input-password"/>
                     </div> 
-                    <Button className="mb-m" variant="primary" block>Sign in</Button>
+                    <Button className="mb-m" variant="primary" block isLoading={isPosting} onClick={onLoginButtonClick}>Sign in</Button>
                 </form>
                 <Link to="/reset-password">I forgot my password</Link>
             </div>
