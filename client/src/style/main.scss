@@ -3,7 +3,19 @@
 @import './resources';
 @import './fonts/fonts';
 
+html {
+	font-size: 100%;
+}
+
 body {
     background: $secondary-10;
     color: $dark;
+}
+
+.auth-container {
+    width: 362px;
+}
+
+.text-center {
+    text-align: center;
 }
