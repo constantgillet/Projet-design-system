@@ -30,7 +30,7 @@ export default function LoginPage() {
                     </div> 
                     <Button className="mb-m" variant="primary" block>Sign in</Button>
                 </form>
-                <Link to="register">I forgot my password</Link>
+                <Link to="/reset-password">I forgot my password</Link>
             </div>
         </main>
     )
