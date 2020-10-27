@@ -64,6 +64,13 @@ module.exports = {
                         loader: 'sass-loader',
                         options: { sourceMap: true },
                     },
+                    {
+                        loader: 'sass-resources-loader',
+                        options: {
+                          // Provide path to the file with resources
+                          resources: path.resolve(__dirname, '../src/style/_resources.scss'),
+                        },
+                    },
                 ],
             },
             {
