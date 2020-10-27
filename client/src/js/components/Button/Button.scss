@@ -1,0 +1,50 @@
+.btn {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0.2px solid #CDCDCD;
+    border-radius: $radius-regular;
+    box-shadow: $shadow-1;
+    color: $light;
+    cursor: pointer;
+
+    .fade-in {
+        animation: buttonFade 0.5s ease-in-out backwards;
+    }
+
+    .fade-out {
+        //animation: reverse buttonFade 0.2s ease-in;
+        /* @keyframes duration | timing-function | delay | name */
+        animation: buttonFadeOut 0.3s ease-in-out backwards;
+    }
+}
+
+.btn-lg {
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-primary {
+    background: $primary;
+}
+
+@keyframes buttonFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes buttonFadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
