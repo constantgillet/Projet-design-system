@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import React, {useEffect, useState} from 'react'
+import { Link, useHistory } from 'react-router-dom'
 import Button from '../../components/Button/Button'
 import FormText from '../../components/FormText/FormText'
 import Input from '../../components/Input/Input'
@@ -8,10 +8,23 @@ import './registerPage.scss'
 
 export default function registerPage() {
 
+    const history = useHistory()
+    const [isPosting, setIsPoting] = useState(false)
+
     //Component did mount
     useEffect(() => {
         document.title = 'Register'
     }, [])
+
+
+    const onRegisterButtonClick = (e) => {
+        e.preventDefault()
+        setIsPoting(true)
+
+        setTimeout(() => {
+            history.push('login')
+        }, 1000)
+    }
 
     return (
         <main className="login-page">
@@ -26,15 +39,16 @@ export default function registerPage() {
                     </div>
                     <div className="form-group mb-xl text-left">
                         <Label htmlFor="input-password">Password</Label>
+                        <FormText>Must contain lowercase letter, uppercase letter and number.</FormText>
                         <Input type="password" placeholder="Your password" id="input-password"/>
                     </div> 
                     <div className="form-group mb-xl text-left">
                         <Label htmlFor="input-password">Confirm Password</Label>
+                        <FormText>Passwords do not match.</FormText>
                         <Input type="password" placeholder="Your password" id="input-password"/>
                     </div> 
-                    <Button className="mb-m" variant="primary" block>Register</Button>
+                    <Button className="mb-m" variant="primary" block onClick={onRegisterButtonClick} isLoading={isPosting}>Register</Button>
                 </form>
-                <Link to="/reset-password">I forgot my password</Link>
             </div>
         </main>
     )
