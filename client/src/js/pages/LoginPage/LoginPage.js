@@ -22,7 +22,7 @@ export default function LoginPage() {
         setIsPoting(true)
 
         setTimeout(() => {
-            history.push('/register')
+            setIsPoting(false)
         }, 1000)
     }
 
