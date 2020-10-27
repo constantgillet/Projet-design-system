@@ -10,4 +10,8 @@
         font-size: $text-body-font-size;
         color: $secondary-80;
     }
+
+    &:focus, &:active {
+        border-color: $primary;
+    }
 }
