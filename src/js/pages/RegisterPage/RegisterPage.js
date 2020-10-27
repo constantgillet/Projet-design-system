@@ -4,7 +4,7 @@ import Button from '../../components/Button/Button'
 import FormText from '../../components/FormText/FormText'
 import Input from '../../components/Input/Input'
 import Label from '../../components/Label/Label'
-import './registerPage.scss'
+import './RegisterPage.scss'
 
 export default function RegisterPage() {
 
