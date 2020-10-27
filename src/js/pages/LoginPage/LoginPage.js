@@ -16,7 +16,6 @@ export default function LoginPage() {
         document.title = 'Login'
     }, [])
 
-
     const onLoginButtonClick = (e) => {
         e.preventDefault()
         setIsPoting(true)
@@ -34,7 +33,7 @@ export default function LoginPage() {
                 <form>
                     <div className="form-group mb-xl text-left">
                         <Label htmlFor="input-email">Email</Label>
-                        <FormText>Please put a valid</FormText>
+                        <FormText>Please put a valid email</FormText>
                         <Input type="text" placeholder="Your email" id="input-email"/>
                     </div>
                     <div className="form-group mb-xl text-left">
