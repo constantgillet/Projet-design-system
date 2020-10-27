@@ -5,6 +5,7 @@
     border: 0.5px solid $secondary-20;
     border-radius: $radius-regular;
     box-sizing: border-box;
+    transition: all 0.2s ease-out;
 
     &::placeholder {
         font-size: $text-body-font-size;
