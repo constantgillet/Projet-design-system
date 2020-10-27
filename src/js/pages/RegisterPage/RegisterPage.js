@@ -6,7 +6,7 @@ import Input from '../../components/Input/Input'
 import Label from '../../components/Label/Label'
 import './registerPage.scss'
 
-export default function registerPage() {
+export default function RegisterPage() {
 
     const history = useHistory()
     const [isPosting, setIsPoting] = useState(false)
