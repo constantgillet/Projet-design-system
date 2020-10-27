@@ -1,8 +1,8 @@
 import React, { Component, useState } from 'react'
 import { Route, Switch, Router } from 'react-router-dom'
 
-import RegisterPage from '../pages/RegisterPage'
-import LoginPage from '../pages/LoginPage'
+import RegisterPage from '../pages/RegisterPage/RegisterPage'
+import LoginPage from '../pages/LoginPage/LoginPage'
 
 function App(props) {
 
