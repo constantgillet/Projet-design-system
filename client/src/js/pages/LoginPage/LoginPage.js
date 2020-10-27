@@ -11,9 +11,9 @@ export default function LoginPage() {
 
     return (
         <main className="login-page">
-            <div className="auth-container">
+            <div className="auth-container text-center">
                 <h1>Login page</h1>
-                <h2>Don't have an account ? <Link>Create an account</Link></h2>
+                <h2>Don't have an account ? <Link to="/register">Create an account</Link></h2>
             </div>
         </main>
     )
