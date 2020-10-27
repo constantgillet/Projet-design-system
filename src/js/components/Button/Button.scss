@@ -13,8 +13,6 @@
     }
 
     .fade-out {
-        //animation: reverse buttonFade 0.2s ease-in;
-        /* @keyframes duration | timing-function | delay | name */
         animation: buttonFadeOut 0.3s ease-in-out backwards;
     }
 }
