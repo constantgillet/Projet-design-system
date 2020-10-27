@@ -22,7 +22,6 @@ $font-familly: 'Mulish';
 }
 
 $text-body-font-size: 14px;
-
 .text-body {
     font-family: $font-familly;
     font-size: $text-body-font-size;
@@ -31,6 +30,8 @@ $text-body-font-size: 14px;
     line-height: 18px;
     letter-spacing: 0em;
 }
+
+$text-body-small-font-size: 12px;
 
 .text-body-small {
     font-family: $font-familly;

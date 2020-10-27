@@ -1,12 +1,13 @@
 .form-control {
     display: block;
-    width: 93%;
+    width: 100%;
     padding: $spacing-s;
     border: none;
     border-radius: $radius-regular;
-    color: $secondary-80;
-    
+    box-sizing: border-box;
+
     &::placeholder {
         font-size: $text-body-font-size;
+        color: $secondary-80;
     }
 }
